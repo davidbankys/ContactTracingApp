@@ -14,39 +14,40 @@
 
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/edFirstName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="196dp"
             android:ems="10"
             android:hint="Name"
             android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+            app:layout_constraintEnd_toEndOf="@+id/edPhoneNum"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+            app:layout_constraintStart_toStartOf="@+id/edPhoneNum"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/edPhoneNum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Phone"
             android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/btSave"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="276dp" />
+            app:layout_constraintTop_toBottomOf="@+id/edFirstName" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="324dp"
             android:text="Save"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+            app:layout_constraintEnd_toEndOf="@+id/edFirstName"
             app:layout_constraintHorizontal_bias="0.516"
-            app:layout_constraintStart_toStartOf="@+id/editTextNumber" />
+            app:layout_constraintStart_toStartOf="@+id/edPhoneNum" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

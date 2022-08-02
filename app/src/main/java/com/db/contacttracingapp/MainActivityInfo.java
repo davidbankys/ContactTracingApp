@@ -10,26 +10,31 @@ import android.widget.EditText;
 
 public class MainActivityInfo extends AppCompatActivity {
 
-    Button button;
-    EditText editText;
-    String st;
+    Button btSave;
+    EditText edFirstName , edPhoneNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_info);
 
-        button = (Button) findViewById(R.id.button);
-        editText = (EditText)findViewById(R.id.editTextTextPersonName2);
+        btSave = findViewById(R.id.btSave);
+        edFirstName = findViewById(R.id.edFirstName);
+        edPhoneNum = findViewById(R.id.edPhoneNum);
 
-        button.setOnClickListener(new View.OnClickListener() {
+
+        btSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String Name=editText.getText().toString();
-
+                String strFirstName=edFirstName.getText().toString();
+                String strPhoneNum = edPhoneNum.getText().toString();
             }
         });
 
         };
+
+
+    https://contacttracingapp-6be87-default-rtdb.firebaseio.com/
+
 
     }
